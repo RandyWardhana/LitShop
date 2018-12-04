@@ -1,2 +1,4 @@
 # LitShop
-LitShop
+---
+
+Welcome to LitShop!
