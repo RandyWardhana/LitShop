@@ -1,6 +1,7 @@
 import express from 'express'
 import bodyparser from 'body-parser'
 import env from 'dotenv'
+import router from './routes/index'
 
 env.config()
 
@@ -16,8 +17,8 @@ app.set('views', process.cwd() + '/view')
 // Set url for static file
 app.use('/static', express.static(process.cwd() + '/static'))
 
-app.get('/', async (req, res) => {
-    res.render('index')
-})
+// Setup app router
+app.use('/', router)
+
 
 app.listen(port, () => { console.log(`Listening on port ${port}`) })
