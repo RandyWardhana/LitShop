@@ -8,8 +8,9 @@
         "watch": "nodemon -i node_modules -x npm run start"
     },
     "keywords": [],
-    "author": "Adrian M. R.",
+    "author": "Randy Wardhana",
     "license": "ISC",
+    "contributors": [],
     "dependencies": {
         "babel-cli": "^6.26.0",
         "babel-core": "^6.26.3",
