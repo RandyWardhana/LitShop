@@ -4,8 +4,9 @@
     "description": "",
     "main": "app.js",
     "scripts": {
-        "start": "babel-node app.js",
-        "watch": "nodemon -i node_modules -x npm run start"
+        "start": "babel-node dist/app.js",
+        "watch": "nodemon -i node_modules -x npm run start",
+        "build": "babel src -d dist"
     },
     "keywords": [],
     "author": "Randy Wardhana",
@@ -15,6 +16,7 @@
         "babel-cli": "^6.26.0",
         "babel-core": "^6.26.3",
         "body-parser": "^1.18.3",
+        "dotenv": "^6.1.0",
         "ejs": "^2.6.1",
         "express": "^4.16.4",
         "multiparty": "^4.2.1",
